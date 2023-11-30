@@ -23,13 +23,18 @@
         android:name="com.example.yourfridge.SecondFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
-
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_SecondFragment_to_productsFragment"
+            app:destination="@id/productsFragment" />
         <action
-            android:id="@+id/action_SecondFragment_to_ThirdFragment"
-            app:destination="@id/ThirdFragment" />
+            android:id="@+id/action_SecondFragment_to_recipesFragment"
+            app:destination="@id/recipesFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_shoppingListFragment"
+            app:destination="@id/shoppingListFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/ThirdFragment"
@@ -40,13 +45,26 @@
         <action
             android:id="@+id/action_ThirdFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
-        <action
-            android:id="@+id/action_ThirdFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.example.yourfridge.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="com.example.yourfridge.ProductsFragment"
+        android:label="ProductsFragment" />
+    <fragment
+        android:id="@+id/recipesFragment"
+        android:name="com.example.yourfridge.RecipesFragment"
+        android:label="RecipesFragment" />
+    <fragment
+        android:id="@+id/shoppingListFragment"
+        android:name="com.example.yourfridge.ShoppingListFragment"
+        android:label="ShoppingListFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.yourfridge.ProfileFragment"
+        android:label="ProfileFragment" />
 </navigation>

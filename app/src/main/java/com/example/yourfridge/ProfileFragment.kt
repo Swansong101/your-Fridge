@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
-class SecondFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -21,19 +21,9 @@ class SecondFragment : Fragment() {
 
         // Set click listeners for the menu items
         view.findViewById<View>(R.id.products_button).setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_productsFragment)
+            findNavController().navigate(R.id.action_ProfileFragment_to_SecondFragment)
         }
 
-        view.findViewById<View>(R.id.shopping_list_button).setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_shoppingListFragment)
-        }
 
-        view.findViewById<View>(R.id.recipes_button).setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_recipesFragment)
-        }
-
-        view.findViewById<View>(R.id.profile_button).setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_profileFragment)
-        }
     }
 }
