@@ -54,17 +54,33 @@
     <fragment
         android:id="@+id/productsFragment"
         android:name="com.example.yourfridge.ProductsFragment"
-        android:label="ProductsFragment" />
+        android:label="ProductsFragment" >
+        <action
+            android:id="@+id/action_productsFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
     <fragment
         android:id="@+id/recipesFragment"
         android:name="com.example.yourfridge.RecipesFragment"
-        android:label="RecipesFragment" />
+        android:label="RecipesFragment" >
+        <action
+            android:id="@+id/action_recipesFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
     <fragment
         android:id="@+id/shoppingListFragment"
         android:name="com.example.yourfridge.ShoppingListFragment"
-        android:label="ShoppingListFragment" />
+        android:label="ShoppingListFragment" >
+        <action
+            android:id="@+id/action_shoppingListFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.yourfridge.ProfileFragment"
-        android:label="ProfileFragment" />
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
 </navigation>

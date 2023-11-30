@@ -20,8 +20,8 @@ class ProfileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Set click listeners for the menu items
-        view.findViewById<View>(R.id.products_button).setOnClickListener {
-            findNavController().navigate(R.id.action_ProfileFragment_to_SecondFragment)
+        view.findViewById<View>(R.id.profile_button).setOnClickListener {
+            findNavController().navigate(R.id.action_profileFragment_to_SecondFragment)
         }
 
 
