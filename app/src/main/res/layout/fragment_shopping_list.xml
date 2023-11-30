@@ -18,19 +18,24 @@
         android:layout_marginBottom="32dp"
         android:fontFamily="sans-serif-medium"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/shopping_list_recycler_view"
+    <ListView
+        android:id="@+id/shoppingListView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
 
     <Button
         android:id="@+id/add_item_to_shopping_list_button"
-        android:layout_width="wrap_content"
+        android:layout_width="183dp"
         android:layout_height="wrap_content"
-        android:text="Add Item"
-        android:background="@android:color/holo_green_light"
-        android:textColor="@android:color/white"
-        android:layout_gravity="end"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center_horizontal"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:text="Save"
+        android:backgroundTint="@android:color/holo_green_light"/>
 
 </LinearLayout>
