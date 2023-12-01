@@ -24,14 +24,14 @@
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
         <action
-            android:id="@+id/action_SecondFragment_to_productsFragment"
-            app:destination="@id/productsFragment" />
+            android:id="@+id/action_SecondFragment_to_addedProducts"
+            app:destination="@id/addedProducts" />
         <action
-            android:id="@+id/action_SecondFragment_to_recipesFragment"
-            app:destination="@id/recipesFragment" />
+            android:id="@+id/action_SecondFragment_to_addedRecipes"
+            app:destination="@id/addedRecipes" />
         <action
-            android:id="@+id/action_SecondFragment_to_shoppingListFragment"
-            app:destination="@id/shoppingListFragment" />
+            android:id="@+id/action_SecondFragment_to_addedShoppingList"
+            app:destination="@id/addedShoppingList" />
         <action
             android:id="@+id/action_SecondFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
@@ -56,24 +56,24 @@
         android:name="com.example.yourfridge.ProductsFragment"
         android:label="ProductsFragment" >
         <action
-            android:id="@+id/action_productsFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_productsFragment_to_addedProducts"
+            app:destination="@id/addedProducts" />
     </fragment>
     <fragment
         android:id="@+id/recipesFragment"
         android:name="com.example.yourfridge.RecipesFragment"
         android:label="RecipesFragment" >
         <action
-            android:id="@+id/action_recipesFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_recipesFragment_to_addedRecipes"
+            app:destination="@id/addedRecipes" />
     </fragment>
     <fragment
         android:id="@+id/shoppingListFragment"
         android:name="com.example.yourfridge.ShoppingListFragment"
         android:label="ShoppingListFragment" >
         <action
-            android:id="@+id/action_shoppingListFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_shoppingListFragment_to_addedShoppingList"
+            app:destination="@id/addedShoppingList" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
@@ -82,5 +82,38 @@
         <action
             android:id="@+id/action_profileFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addedProducts"
+        android:name="com.example.yourfridge.AddedProducts"
+        android:label="AddedProducts" >
+        <action
+            android:id="@+id/action_addedProducts_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_addedProducts_to_productsFragment"
+            app:destination="@id/productsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addedRecipes"
+        android:name="com.example.yourfridge.AddedRecipes"
+        android:label="AddedRecipes" >
+        <action
+            android:id="@+id/action_addedRecipes_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_addedRecipes_to_recipesFragment"
+            app:destination="@id/recipesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addedShoppingList"
+        android:name="com.example.yourfridge.AddedShoppingList"
+        android:label="AddedShoppingList" >
+        <action
+            android:id="@+id/action_addedShoppingList_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_addedShoppingList_to_shoppingListFragment"
+            app:destination="@id/shoppingListFragment" />
     </fragment>
 </navigation>
