@@ -77,12 +77,12 @@
         android:id="@+id/button2"
         android:layout_width="183dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@android:color/holo_green_light"
         android:minHeight="48dp"
         android:padding="12dp"
-        android:text="Save"
-        android:backgroundTint="@android:color/holo_green_light"/>
+        android:text="Save" />
 
 </LinearLayout>
