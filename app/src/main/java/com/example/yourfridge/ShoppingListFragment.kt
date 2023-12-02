@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 
 class ShoppingListFragment : Fragment() {
 
@@ -18,6 +19,9 @@ class ShoppingListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // TODO: Implement the shopping list fragment here
+        view.findViewById<View>(R.id.add_item_to_shopping_list_button).setOnClickListener {
+            findNavController().navigate(R.id.action_shoppingListFragment_to_addedShoppingList)
+        }
+
     }
 }

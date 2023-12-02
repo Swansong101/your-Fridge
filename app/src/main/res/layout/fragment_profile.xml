@@ -4,8 +4,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/holo_green_light">
 
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:text="Back"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
 
     <ImageView
         android:id="@+id/profile_image"
@@ -22,10 +36,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/profile_image"
         android:layout_centerHorizontal="true"
-        android:text="Username"
+        android:text="Nicole Owens"
         android:textSize="24sp"
         android:textStyle="bold" />
-
 
     <TextView
         android:id="@+id/email_text"
@@ -33,8 +46,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/username_text"
         android:layout_centerHorizontal="true"
-        android:text="Email"
+        android:text="nicole.owens@gmail.com"
         android:textSize="18sp" />
+
 
     <Button
         android:id="@+id/change_password_button"

@@ -14,8 +14,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Menu"
-        android:textSize="24sp"
-        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textColor="@android:color/holo_green_light"
         android:layout_gravity="center"
         android:layout_marginBottom="32dp"
         android:fontFamily="sans-serif-medium"/>
@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Products"
-        android:background="@android:color/holo_green_light"
+        android:backgroundTint="@android:color/holo_green_light"
         android:textColor="@android:color/white"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp" />
@@ -35,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Shopping List"
-        android:background="@android:color/holo_green_light"
+        android:backgroundTint="@android:color/holo_green_light"
         android:textColor="@android:color/white"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp" />
@@ -45,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Recipes"
-        android:background="@android:color/holo_green_light"
+        android:backgroundTint="@android:color/holo_green_light"
         android:textColor="@android:color/white"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp" />
@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Profile"
-        android:background="@android:color/holo_green_light"
+        android:backgroundTint="@android:color/holo_green_light"
         android:textColor="@android:color/white"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp" />

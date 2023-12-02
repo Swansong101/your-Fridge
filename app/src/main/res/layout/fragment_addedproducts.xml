@@ -1,84 +1,302 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="32dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Products"
-        android:textColor="@android:color/black"
-        android:textSize="24sp" />
+    android:padding="16dp"
+    android:background="@android:color/holo_green_light">
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/products_recycler_view"
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="385dp"
+        android:layout_height="79dp"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:text="Back"
+            android:textColor="@android:color/white" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Product List"
+            android:textColor="@android:color/white"
+            android:textSize="32sp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Products GridLayout -->
+    <GridLayout
+        android:id="@+id/productsGridLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="76dp"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false">
 
+        <!-- Product 1 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1">
+
+            <ImageView
+                android:id="@+id/productImage1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/product_image_1"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/productName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yogurt"
+                android:layout_below="@id/productImage1"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/productCategory1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dairy Product"
+                android:layout_below="@id/productName1"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/productExpiration1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expiration Date 05/12/2023"
+                android:layout_below="@id/productCategory1"
+                android:padding="8dp"/>
+        </RelativeLayout>
+
+        <!-- Product 2 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1">
+
+            <ImageView
+                android:id="@+id/productImage2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/product_image_2"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/productName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eggs"
+                android:layout_below="@id/productImage2"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/productCategory2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Poultry Product"
+                android:layout_below="@id/productName2"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/productExpiration2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expiration Date 12/12/2023"
+                android:layout_below="@id/productCategory2"
+                android:padding="8dp"/>
+        </RelativeLayout>
+
+        <!-- Product 3 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1">
+
+            <ImageView
+                android:id="@+id/productImage3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/product_image_3"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/productName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Milk"
+                android:layout_below="@id/productImage3"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/productCategory3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dairy Product"
+                android:layout_below="@id/productName3"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/productExpiration3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expiration Date 06/12/2023"
+                android:layout_below="@id/productCategory3"
+                android:padding="8dp"/>
+        </RelativeLayout>
+
+        <!-- Product 4 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1">
+
+            <ImageView
+                android:id="@+id/productImage4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/product_image_4"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/productName4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chicken"
+                android:layout_below="@id/productImage4"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/productCategory4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Poultry Product"
+                android:layout_below="@id/productName4"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/productExpiration4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expiration Date 25/12/2023"
+                android:layout_below="@id/productCategory4"
+                android:padding="8dp"/>
+        </RelativeLayout>
+
+        <!-- Product 5 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1">
+
+            <ImageView
+                android:id="@+id/productImage5"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/product_image_5"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/productName5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Banana Bread"
+                android:layout_below="@id/productImage5"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/productCategory5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pastry"
+                android:layout_below="@id/productName5"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/productExpiration5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expiration Date 12/12/2023"
+                android:layout_below="@id/productCategory5"
+                android:padding="8dp"/>
+        </RelativeLayout>
+
+        <!-- Product 6 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1">
+
+            <ImageView
+                android:id="@+id/productImage6"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/product_image_6"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/productName6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cheese"
+                android:layout_below="@id/productImage6"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/productCategory6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dairy Product"
+                android:layout_below="@id/productName6"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/productExpiration6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expiration Date 18/12/2023"
+                android:layout_below="@id/productCategory6"
+                android:padding="8dp"/>
+        </RelativeLayout>
+
+
+
+    </GridLayout>
+
+    <!-- Add Product Button -->
     <Button
         android:id="@+id/add_product_button"
-        android:layout_width="wrap_content"
-        android:layout_height="76dp"
-        android:layout_gravity="end"
-        android:layout_marginTop="8dp"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
         android:background="@android:color/holo_green_light"
         android:text="Add Product"
         android:textColor="@android:color/white" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Added Products"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</LinearLayout>
-
-
-
-
+</RelativeLayout>

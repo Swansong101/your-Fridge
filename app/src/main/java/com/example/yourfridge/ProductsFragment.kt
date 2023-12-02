@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 
 class
 
@@ -21,6 +22,9 @@ ProductsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // TODO: Implement the products fragment page here
+        view.findViewById<View>(R.id.button2).setOnClickListener {
+            findNavController().navigate(R.id.action_productsFragment_to_addedProducts)
+        }
+
     }
 }

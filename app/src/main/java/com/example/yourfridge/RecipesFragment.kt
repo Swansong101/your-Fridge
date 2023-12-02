@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 
 class RecipesFragment : Fragment() {
 
@@ -18,6 +19,9 @@ class RecipesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // TODO: Implement the recipes fragment here
+        view.findViewById<View>(R.id.add_recipe_button).setOnClickListener {
+            findNavController().navigate(R.id.action_recipesFragment_to_addedRecipes)
+        }
+
     }
 }

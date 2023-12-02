@@ -47,11 +47,6 @@
             app:destination="@id/SecondFragment" />
     </fragment>
     <fragment
-        android:id="@+id/registerFragment"
-        android:name="com.example.yourfridge.RegisterFragment"
-        android:label="fragment_register"
-        tools:layout="@layout/fragment_register" />
-    <fragment
         android:id="@+id/productsFragment"
         android:name="com.example.yourfridge.ProductsFragment"
         android:label="ProductsFragment" >

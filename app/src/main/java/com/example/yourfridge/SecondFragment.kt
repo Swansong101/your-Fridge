@@ -21,15 +21,15 @@ class SecondFragment : Fragment() {
 
         // Set click listeners for the menu items
         view.findViewById<View>(R.id.products_button).setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_productsFragment)
+            findNavController().navigate(R.id.action_SecondFragment_to_addedProducts)
         }
 
         view.findViewById<View>(R.id.shopping_list_button).setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_shoppingListFragment)
+            findNavController().navigate(R.id.action_SecondFragment_to_addedShoppingList)
         }
 
         view.findViewById<View>(R.id.recipes_button).setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_recipesFragment)
+            findNavController().navigate(R.id.action_SecondFragment_to_addedRecipes)
         }
 
         view.findViewById<View>(R.id.profile_button).setOnClickListener {

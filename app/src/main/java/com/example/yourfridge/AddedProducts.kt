@@ -18,8 +18,13 @@ class AddedProducts : Fragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // TODO: Implement the added products fragment here
+        view.findViewById<View>(R.id.add_product_button).setOnClickListener {
+            findNavController().navigate(R.id.action_addedProducts_to_productsFragment)
+        }
 
+        view.findViewById<View>(R.id.back_button).setOnClickListener {
+            findNavController().navigate(R.id.action_addedProducts_to_SecondFragment)
+        }
 
     }
 }
