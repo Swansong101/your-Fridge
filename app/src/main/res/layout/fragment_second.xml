@@ -10,15 +10,14 @@
     android:padding="16dp"
     android:background="@android:color/white">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Menu"
-        android:textSize="40sp"
-        android:textColor="@android:color/holo_green_light"
-        android:layout_gravity="center"
-        android:layout_marginBottom="32dp"
-        android:fontFamily="sans-serif-medium"/>
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="287dp"
+        android:layout_height="232dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/fridge" />
+
+
 
     <Button
         android:id="@+id/products_button"
