@@ -30,11 +30,14 @@
             android:id="@+id/action_SecondFragment_to_addedRecipes"
             app:destination="@id/addedRecipes" />
         <action
-            android:id="@+id/action_SecondFragment_to_addedShoppingList"
-            app:destination="@id/addedShoppingList" />
-        <action
             android:id="@+id/action_SecondFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_addedShoppingList"
+            app:destination="@id/addedShoppingList" />
     </fragment>
     <fragment
         android:id="@+id/ThirdFragment"
