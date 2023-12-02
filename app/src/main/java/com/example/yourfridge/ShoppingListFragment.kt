@@ -23,5 +23,6 @@ class ShoppingListFragment : Fragment() {
             findNavController().navigate(R.id.action_shoppingListFragment_to_addedShoppingList)
         }
 
+
     }
 }
