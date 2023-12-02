@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorPrimary">#FF6200EE</color>
     <color name="holo_green_light">#00FF00</color>
+    <color name="new_gray">#CCCCCC</color>
 </resources>

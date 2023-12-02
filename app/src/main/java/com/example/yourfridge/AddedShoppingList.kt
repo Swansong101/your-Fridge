@@ -19,10 +19,6 @@ class AddedShoppingList : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<View>(R.id.add_product_button).setOnClickListener {
-            findNavController().navigate(R.id.action_addedShoppingList_to_shoppingListFragment)
-        }
-
         view.findViewById<View>(R.id.back_button).setOnClickListener {
             findNavController().navigate(R.id.action_addedShoppingList_to_SecondFragment)
         }
