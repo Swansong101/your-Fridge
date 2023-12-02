@@ -30,83 +30,93 @@
         android:layout_marginBottom="32dp"
         android:fontFamily="sans-serif-medium"/>
 
-    <!-- Sample Recipe TextViews -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1. 1 pkt of milk"
+        android:text="1. 1 pkt of milk - KSh 120"
         android:textColor="@android:color/black"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2. A tray of eggs"
+        android:text="2. A tray of eggs - KSh 250"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="3. Soy sauce"
+        android:text="3. Soy sauce - KSh 80"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="4. Tomato paste"
+        android:text="4. Tomato paste - KSh 100"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="5. Baked beans"
+        android:text="5. Baked beans - KSh 150"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="6. Banana bread"
+        android:text="6. Banana bread - KSh 200"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="7. Caesar Salad"
+        android:text="7. Caesar Salad - KSh 180"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="8. Brown Bread"
+        android:text="8. Brown Bread - KSh 90"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="9. Tomatoes"
+        android:text="9. Tomatoes - KSh 60"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="10. Basil"
+        android:text="10. Basil - KSh 40"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="3. Carrot Cake"
+        android:text="11. Carrot Cake - KSh 300"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
 
     <Button

@@ -36,77 +36,88 @@
         android:layout_height="wrap_content"
         android:text="1. Spaghetti Bolognese"
         android:textColor="@android:color/black"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2. Chicken Alfredo"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3. Vegetarian Stir-Fry"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="4. Grilled Salmon"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="5. Margherita Pizza"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="6. Chocolate Cake"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="7. Caesar Salad"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="8. Banana Bread"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="9. Tomato Basil Soup"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="10. Mango Salsa"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3. Carrot Cake"
         android:textColor="@android:color/black"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
 
 
     <Button
