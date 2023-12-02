@@ -37,8 +37,6 @@ class SecondFragment : Fragment() {
         view.findViewById<View>(R.id.profile_button).setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_profileFragment)
         }
-        view.findViewById<View>(R.id.logout_button).setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_ThirdFragment)
-        }
+
     }
 }

@@ -10,16 +10,16 @@
 
 
     <Button
-        android:id="@+id/back_button"
+        android:id="@+id/logoutt_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:text="Back"
-        android:background="?android:attr/selectableItemBackgroundBorderless"
-        android:textColor="@android:color/white"
+        android:layout_gravity="end"
+        android:backgroundTint="@android:color/white"
+        android:text="Logout"
+        android:textColor="@android:color/black"
         android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"/>
+        android:layout_marginEnd="16dp" />
+
 
     <ImageView
         android:id="@+id/profile_image"

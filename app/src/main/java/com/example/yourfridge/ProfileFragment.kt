@@ -19,9 +19,8 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-        view.findViewById<View>(R.id.back_button).setOnClickListener {
-            findNavController().navigate(R.id.action_profileFragment_to_SecondFragment)
+        view.findViewById<View>(R.id.logoutt_button).setOnClickListener {
+            findNavController().navigate(R.id.action_profileFragment_to_ThirdFragment)
         }
 
 
