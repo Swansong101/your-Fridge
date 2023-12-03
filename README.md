@@ -8,23 +8,20 @@ Welcome to Your Fridge, a Kotlin-based mobile application developed for the Mobi
 
 ### 1. Shopping Lists Management
    - Create and manage your shopping lists with ease.
-   - Add items to your shopping list manually or by scanning barcodes.
+   - Add items to your shopping list manually.
    - Check off items as you shop to stay organized.
 
 ### 2. Recipe Tracking
    - Store and organize your favorite recipes.
    - Easily access ingredients needed for each recipe.
-   - Plan your meals by integrating recipes with your shopping list.
 
 ### 3. Product Inventory
    - Keep a comprehensive list of all the products in your fridge.
    - Set expiration dates to avoid food waste.
-   - Receive notifications when items are about to expire.
 
 ### 4. Expense Tracking
    - Monitor your food expenses to stay within budget.
-   - Get insights into your spending patterns over time.
-
+  
 ## Technologies Used
 
 - **Language:** Kotlin
