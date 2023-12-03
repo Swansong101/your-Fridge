@@ -71,7 +71,10 @@
         android:minHeight="48dp"
         android:padding="12dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:onClick="captureImageFromCamera" />
+
 
     <Button
         android:id="@+id/button2"

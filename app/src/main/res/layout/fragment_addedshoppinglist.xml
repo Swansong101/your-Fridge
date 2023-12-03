@@ -8,100 +8,85 @@
     android:padding="16dp"
     android:background="@android:color/holo_green_light">
 
-
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Shopping List"
         android:textSize="32sp"
         android:textColor="@android:color/white"
-        android:layout_gravity="center"
+        android:layout_gravity="start"
         android:layout_marginBottom="32dp"
         android:fontFamily="sans-serif-medium"/>
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:padding="8dp"
-        android:text="1. 1 pkt of milk - KSh 120"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp"
-        android:editable="true"/>
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:padding="8dp"
-        android:text="2. A tray of eggs - KSh 250"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:layout_marginTop="8dp"
-        android:editable="true"/>
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:padding="8dp"
-        android:text="3. 5 pkts of sugar - KSh 120"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp"
-        android:editable="true"/>
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:padding="8dp"
-        android:text="4. A bag of grains - KSh 250"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:layout_marginTop="8dp"
-        android:editable="true"/>
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:padding="8dp"
-        android:text="5. 1 pkt of sugar - KSh 220"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp"
-        android:editable="true"/>
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:padding="8dp"
-        android:text="6. 2 packets of unga - KSh 450"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:layout_marginTop="8dp"
-        android:editable="true"/>
-    <!-- Add other EditText items for each shopping list item -->
-
+    <!-- Sample Shopping List Items with CheckBox and EditText -->
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="8dp"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="end"
+        android:orientation="vertical"
+        android:layout_gravity="start">
 
-        />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="start">
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="8dp"
+                android:text="1. 1 pkt of milk - KSh 120"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:editable="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Add other Shopping List Items with CheckBox and EditText -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="start">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="start">
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="8dp"
+                android:text="2. A tray of eggs - KSh 250"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:editable="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Add more Shopping List Items as needed -->
+
     <Button
         android:id="@+id/back_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginStart="16dp"
+        android:layout_gravity="start"
         android:layout_marginTop="16dp"
         android:background="?android:attr/selectableItemBackgroundBorderless"
         android:text="Back"
