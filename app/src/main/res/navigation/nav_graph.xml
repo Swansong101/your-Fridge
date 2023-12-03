@@ -80,6 +80,9 @@
         <action
             android:id="@+id/action_profileFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_ThirdFragment"
+            app:destination="@id/SecondFragment" />
     </fragment>
     <fragment
         android:id="@+id/addedProducts"
